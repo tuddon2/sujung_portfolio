@@ -1,0 +1,824 @@
+@media all and (max-width:1024px) and (min-width:700px){
+
+
+
+    .wrap {
+        position: relative;
+    }
+    /* ----------------------------가로페이지 */
+    .main_horizontal_page {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .main_page {
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        float: left;
+    }
+    .main_text {
+        position: relative;
+        top: 50%;
+        margin-top: -20%;
+        font-size: 22vw;
+    }
+    .main_page1 > .main_text {
+        text-align: right;
+    }
+    .main_page2 > .main_text {
+        text-align: left;
+    }
+    .main_page:nth-child(1) {
+        background-image: url(https://i.postimg.cc/TwxD7JgW/main-1.png);
+    }
+    .main_page:nth-child(2) {
+        background-image: url(https://i.postimg.cc/6qn6DkKW/main-2.png);
+    }
+    .main_page:nth-child(3) {
+        background-image: url(https://i.postimg.cc/kXPgxgNB/main-3.png);
+    }
+    /* ----------------------------메인 무브 텍스트 박스 */
+    .mt_mask_box {
+        /* background-color: cornflowerblue; */
+        width: 1920px;
+        height: 80px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+    }
+    .move_t_box {
+        width: 3840px;
+        height: 80px;
+        font-weight: 200;
+        font-size: 25px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        animation-name: move_text;
+        animation-duration: 50s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    .mt_img {
+        /* background-color: crimson; */
+        width: 80px;
+        height: 80px;
+        margin: 0 30px;
+        box-sizing: border-box;
+        background-size: 50% 50%;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        animation-name: move_img;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    .mt_img1 {
+        background-image: url(../img/smlie_icon.png);
+    }
+    .mt_img2 {
+        background-image: url(../img/Twinkle_icon.png);
+    }
+    
+    @keyframes move_text {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-50%);
+        }
+    }
+    
+    @keyframes move_img {
+        from {
+            transform: rotate(0);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    .move_t_box:hover {
+        animation-play-state: paused;
+    }
+    /* ----------------------------우주선 */
+    .main_ufo {
+        width: 207px;
+        height: 137px;
+        position: absolute;
+        left: 3%;
+        top: 100px;
+        z-index: 99;
+        transform: rotate(-10deg);
+        animation-name: ufo_move;
+        animation-duration: 1s;
+        scale:0.8
+    }
+    .main_ufo img{
+        object-fit: contain;
+    }
+    @keyframes ufo_move {
+        from {
+            transform: rotate(-10deg) translateY(-200px);
+        }
+        to {
+            transform: rotate(-10deg) translateY(0);
+        }
+    }
+    /* ----------------------------우주배경 */
+    
+    .video_bg {
+        position: fixed;
+        top: 0;
+        right: 0;
+        clip-path: circle(0 at center center);
+        z-index: 9;
+    }
+    .s_box {
+        width: 350px;
+        height: 300px;
+        position: absolute;
+        display: none;
+        color: #fff;
+        /* background-color: cyan; */
+    }
+    .s_box1 {
+        top: 300px;
+        left: 50%;
+        margin-left: -175px;
+    }
+    .s_box2 {
+        top: 350px;
+        left: 50%;
+        margin-left: -175px;
+    }
+    .s_box3 {
+        top: 50%;
+        left: 50%;
+        margin-left: -175px;
+        z-index: 999;
+    }
+    .s_title {
+        width: 100%;
+        height: 35%;
+        font-weight: 800;
+        font-size: 60px;
+        text-align: center;
+    }
+    .s_con {
+        width: 80%;
+        height: 40%;
+        margin: 10%;
+        font-size: 20px;
+        font-weight: 400;
+    
+    }
+    .s_box3 .s_con {
+        align-items: center;
+        text-align: center;
+    }
+    
+    /* ----------------------------프로필 내용 */
+    .con_wrap {
+        position: relative;
+        overflow: hidden;
+        /* border: 1px solid black;
+        box-sizing: border-box; */
+    }
+    .bg_img {
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .bg_img1 {
+        background-image: url(https://i.postimg.cc/SKycrp8p/bg-img-1.png);
+    }
+    .bg_img2 {
+        background-image: url(https://i.postimg.cc/tC40L1j1/bg-img-2.png);
+    }
+    .bg_img3 {
+        background-image: url(https://i.postimg.cc/mgnXDw59/bg-img-3.png);
+    }
+    
+
+    .con_box {
+        width:50%;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .c_title{
+        font-size: 35px;
+        font-weight: 700;
+    }
+    
+    .con{
+        width: 80%;
+        height: 50%;
+        margin: 2% 0%;
+        font-size: 18px;
+    }
+    /* ----------------------------로켓 */
+    
+    .roket_box{
+        width: 100vw;
+        height:65vw;
+        position: absolute;
+        top:-100px;
+        left: -80%;
+        
+    }
+
+    .roket_title{
+        font-size: 20px;
+        position: absolute;
+        top:7%;
+        left: 5%;
+    }
+    /* ----------------------------프로젝트 미리보기*/
+    .bg_img3{
+        position: relative;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .p_title{
+        width: 100%;
+        height: 15%;
+        /* margin-top: 50px; */
+        text-align: center;
+        font-size: 2.2vw;
+        /* background-color: crimson; */
+    }
+    .p_img_wrap{
+        width: 100%;
+        height: 80%;
+        position: absolute;
+        top: 15%;
+        /* background-color: blueviolet; */
+    }
+    
+    .preview_img{
+        position: absolute;
+    }
+    .preview_img1{
+        width: 210px;
+        height: 410px;
+        left: 50%;
+        top: 160px;
+        margin-left: -560px;
+    }
+    .preview_img2{
+        width: 660px;
+        height: 340px;
+        left: 50%;
+        top: 160px;
+        margin-left: -330px;
+        background: url(https://i.postimg.cc/FHzLdKgw/p-img-2.png) no-repeat ;
+        background-size: 100% 100%;
+    
+        
+    
+    }
+    .preview_img3{
+        width: 265px;
+        height: 140px;
+        left: 50%;
+        top: 0px;
+        margin-left: 65px;
+        /* z-index: -1; */
+    }
+    .preview_img4{
+        width: 230px;
+        height: 380px;
+        left: 50%;
+        top: 0px;
+        margin-left: 350px;
+    }
+    .preview_img5{
+        width: 400px;
+        height: 215px;
+        left: 50%;
+        top:520px;
+        margin-left: -330px;
+    }
+    
+    /* ----------------------------웹 프로젝트 내용 */
+    .wp_con{
+        position: relative;
+        top: 0;
+        left: 0;
+        color: #fff;
+    }
+    .wp_con img{
+        position: relative;
+        filter: brightness(0.3);
+        z-index: -1;
+        object-fit: cover;
+    }
+    .wp_con div{
+        position: absolute;
+    }
+    .wp_title{
+        width: 100%;
+        height: 50%;
+        padding: 0 150px;
+        box-sizing: border-box;
+        /* background-color: chocolate; */
+        align-items: center;
+        text-align: right;
+        top: 0;
+        left: 0;
+        /* display: none; */
+    }
+    
+    .wp_title h2{
+        font-size: 11vw;
+        font-weight: 400;
+    }
+    .wp_title h3{
+        font-size: 4vw;
+        font-weight: 400;
+    }
+    .wp_con_box{
+        width: 100%;
+        height: 35%;
+        /* background-color: rgb(216, 189, 169); */
+        bottom:15%;
+        left: 0;
+        padding: 50px 150px;
+        box-sizing: border-box;
+        display: none;
+    }
+    .wp_con_box h4{
+        font-size: 3vw;
+        font-weight: 400;
+        line-height: 3.5vw;
+    }
+    .wp_con_box h5{
+        font-size: 15px;
+        line-height: 3.5vw;
+        font-weight: 400;
+    }
+    .wp_con_box p{
+        font-size: 16px;
+        font-weight: 300;
+    }
+    
+    /* ------------------- */
+    .wp_t2 .wp_title{
+        text-align: left;
+    }
+    .wp_t2 .wp_con_box{
+        text-align: right;
+    }
+    .wp_t4 .wp_title{
+        text-align: left;
+        padding: 50px 100px;
+    }
+    .wp_t4 .wp_con_box{
+        text-align: right;
+    }
+    .wp_t3 .wp_title{
+        text-align: right;
+        padding: 50px 100px;
+    }
+    /* ------------------- */
+    .but_wrap{
+        position: relative;
+        width: 380px;
+        height: 5%;
+        bottom:10%;
+
+        /* background-color: rgb(216, 189, 169); */
+    }
+    .wp_t1 .but_wrap{
+        left: 150px;
+    }
+    .wp_t3 .but_wrap{
+        left: 150px;
+    }
+    .wp_t2 .but_wrap{
+        right: 150px;
+    }
+    .wp_t4 .but_wrap{
+        right: 150px;
+    }
+    .but{
+        width: 180px;
+        height: 50px;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        align-items: center;
+        text-align: center;
+        border-radius: 30px;
+        position: absolute;
+        font-size: 16px;
+        line-height: 45px;
+        font-weight: 300;
+        left: 0px;
+        cursor: pointer;
+    }
+    .but2{
+        left: 200px;
+        
+    }
+    
+    /* ----------------------------시각디자인 프로젝트 내용 */
+    .gap_img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 180px;
+        z-index: 9999;
+        background-image: url(https://i.postimg.cc/tC40L1j1/bg-img-2.png);
+        background-repeat: no-repeat;
+        background-size:100% ;
+    }
+    .vd_menu{
+        width: 1500px;
+        height: 600px;
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        margin-left: -750px;
+        /* transform-style: preserve-3d;
+        perspective: 500px; */
+        transform: rotate(90deg) ;
+    }
+    .sub_wrap{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top:0;
+        left:0;
+        transition: 0.5s;
+        transform: scaleX(0.003) scaleY(0.2) ;
+    }
+    .vd_title{
+        width: 30vw;
+        height: 100px;
+        /* background-color: chocolate; */
+        position: absolute;
+        top:50%;
+        left: 50%;
+        margin-left:-15vw;
+        margin-top: -25%;
+        font-size: 2vw;
+        /* transition: 0.5s; */
+        font-weight: 400;
+    }
+    .vd_title p{
+        position: absolute;
+        bottom: 0;
+    }
+    .Visual{
+        left: 0;
+    }
+    .Design{
+        right: 0;
+    }
+    .swiper {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top:-120%;
+        /* scale: 0.8; */
+        /* display: none; */
+        }
+    
+    .swiper-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 500px;
+        height: 350px;
+        /* background-color: coral; */
+        box-shadow: 5px 5px 50px 5px black;
+        }
+    
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        }
+    /* -----------------------------------------------푸터 */
+    .footer_wrap video{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .b_img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .ct_wrap{
+        width: 60%;
+        /* height: 600px; */
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        margin-left: -30%;
+        /* background-color: aqua; */
+        display: none;
+        z-index: 999;
+    }
+    .ct_wrap ul{
+        width: 50%;
+        height: 180px;
+        /* float: left; */
+        /* background-color: aqua; */
+        color: #c0caff;
+        font-size: 20px;
+        font-weight: 600;
+        position: relative;
+    }
+    .ct_wrap ul:last-child{
+        width: 100%;
+        position: relative;
+    }
+    .ct_wrap ul:last-child li{
+        position: relative;
+    }
+    /* .last_li{
+        top: -60px;
+        left: 50%;
+    }
+     */
+    
+    .ct_wrap li{
+        width: 100%;
+        color: #fff;
+        font-weight: 200;
+        font-size: 25px;
+        margin-top: 30px;
+        line-height: 20px;
+        /* background-color: aqua; */
+    }
+    .ct_wrap a{
+        color: #fff;
+        font-weight: 200;
+    }
+    .ct_wrap img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .ufo_footer{
+        width: 800px;
+        height:1000px;
+        position: absolute;
+        left: -400px;
+        bottom: -600px;
+        transform: rotate(30deg) scale(0.6);
+    }
+    
+    
+    .copyright{
+        width: 100%;
+        height: 100px;
+        font-weight: 20px;
+        text-align: center;
+        font-weight: 200;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: #fff;
+    }
+    /* --------------------------------------------------------고정메뉴 */
+    .rt_overlay{
+        width: 200px;
+        height: 70px;
+        position: fixed;
+        top: 4.6%;
+        right:2.5%;
+        z-index: 9999;
+        border-radius: 90px;
+        cursor: pointer;
+        /* background-color: #ec4747; */
+    }
+    .r_top_menu{
+        width: 150px;
+        height: 70px;
+        position: absolute;
+        left:50px;
+        border-radius: 90px;
+        background-color: #fff;
+    }
+    .line_wrap{
+        width: 25px;
+        height: 14px;
+        position: absolute;
+        left: 22.5px;
+        top: 50%;
+        margin-top: -7px;
+        /* background-color: cornflowerblue;/ */
+    }
+    .line{
+        width: 100%;
+        height: 3px;
+        background-color: black;
+    }
+    .line2{
+        margin: 4px 0;
+    }
+    .r_top_menu p{
+        display: none;
+        position: absolute;
+        left: 50%;
+        margin-left: -35px;
+        top: 20px;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .menu_img{
+        width: 50px;
+        height: 30px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    
+    .rt_menu{
+        border-radius: 30px;
+        background-color: #fff;
+        position: fixed;
+        top: 4.6%;
+        right:2.5%;
+        z-index: 9999;
+        display: none;
+    }
+    .x_box{
+        width: 25px;
+        height: 0px;
+        position: absolute;
+        right: 22.5px;
+        top: 33.5px;
+        z-index: 9999999;
+        cursor: pointer;
+    }
+    .x_line{
+        width: 100%;
+        height: 3px;
+        background-color: black;
+    }
+    .x_line1{
+        rotate: 45deg;
+    }
+    .x_line2{
+        margin-top: -3px;
+        rotate: -45deg;
+    }
+    
+    .rt_text{
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        font-size: 40px;
+    
+    }
+    .rt_text a{
+        color: #000;
+        font-weight:500;
+    }
+    .rt_text h3:hover{
+        font-style: italic;
+        font-weight: 900;
+        transition-duration: 0.5s;
+    }
+    .rt_text h3:hover a{
+        font-style: italic;
+        font-weight: 900;
+        color:rgb(189, 154, 255)
+    
+    }
+    .rt_text h3:hover::before{
+        content:'';
+        display: inline-block;
+        width: 5.8vw;
+        height: 3.6vw;
+        margin-right:10px;
+        background-image: url(https://i.postimg.cc/vmBkNCFp/roket-1.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        transition-duration: 0.5s;
+    }
+    
+    .rt_ufo{
+        width: 30vw;
+        height: 30vw;
+        border-radius: 30vw;
+        position: absolute;
+        bottom:100px;
+        right:100px;
+        overflow:hidden; 
+        text-align: center;
+        background: url(https://i.postimg.cc/prD6jHzn/space-bg.png) no-repeat 100%;
+        cursor: pointer;
+        scale: 0.5;
+        z-index: 99;
+    }
+    .rt_ufo2{
+        scale: 1.2;
+        width: 30vw;
+        height: 30vw;
+        border-radius: 30vw;
+        position: absolute;
+        bottom:100px;
+        right:100px;
+        border: 1px solid black;
+        animation-name: twinkle_rotate;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+    }
+    .ro_img{
+        width: 3vw;
+        height: 3vw;
+        position: absolute;
+        z-index: 99;
+    }
+    .ro_img1{
+        top: 3vw;
+        left:3vw;
+        animation-name: twinkle_size;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    .ro_img2{
+        bottom:3vw;
+        right:3vw;
+        animation-name: twinkle_size2;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    
+    }
+    
+    @keyframes twinkle_rotate {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes twinkle_size {
+        from{
+            transform: scale(1);
+        }
+        to{
+            transform: scale(1.5);
+        }
+    }
+    @keyframes twinkle_size2 {
+        from{
+            transform: scale(1.5);
+        }
+        to{
+            transform: scale(1);
+        }
+    }
+    .rt_ufo_img{
+        width: 26vw;
+        height: 24vw;
+        position: absolute;
+        top: 30vw;
+        left: 50%;
+        margin-left: -13vw;
+    }
+    .rt_ufo a{
+        width: 300px;
+        font-size:25px;
+        color:rgb(255, 255, 255);
+        font-weight: 400;
+        font-size: 2vw;
+        position: absolute;
+        bottom: 6vw;
+        left: 50%;
+        margin-left: -150px;
+        display: none;
+    }
+    
+  
+
+
+
+
+
+    /* 지우지마쇼 */
+    }
+    

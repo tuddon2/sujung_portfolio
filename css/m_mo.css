@@ -1,0 +1,383 @@
+@media all and (max-width:699px){
+
+
+
+
+  /* ---------------------------------------------------모바일버전 */
+  .bg_img5{
+    background-image: url(../img/bg_img_3.png);
+}
+.bg_img1{
+    position: relative;
+}
+.main_text1{
+    width: 100%;
+    height: 100%;
+    font-size: 15vw;
+    text-align: center;
+    line-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.mo_ufo_2{
+    width: 77vw;
+    height: 68vw;
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    margin-left: -38.5vw;
+    /* scale: 0.5; */
+}
+.mo_ufo_text{
+    width: 50vw;
+    height: 50vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -25vw;
+    color: #fff;
+    text-align: center;
+    display: none;
+}
+.mo_ufo_title{
+    font-weight: 800;
+    font-size: 11vw;
+}
+.mo_ufo_con{
+    margin-top: 30px;
+    font-size: 6vw;
+}
+
+
+.m_video_bg{
+    display: none;
+    position: absolute;
+}
+/* ---------------------------- */
+.con_box1{ margin-top:10vw;}
+.con1{
+    width: 120%;
+    /* margin-left: 10vw; */
+
+}
+.m_roket_box{
+    width: 140vw;
+    height: 90vw;
+    position: absolute;
+    top:10vw;
+    left:-110vw;
+    cursor: pointer;
+}
+.m_roket_title{
+    font-size: 4vw;
+    font-weight: 600;
+    position: absolute;
+    top: 8%;
+    left: 5%;
+}
+.click_img{
+    width: 15vw;
+    height: 15vw;
+    position: absolute;
+    top: 100px;
+    left: 5vw;
+    
+}
+
+.click_box{
+    width: 60%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    /* background-color: #c0caff; */
+}
+/* ----------------------------------------------- */
+.bg_img5 .swiper {
+    width: 80vw;
+    height: 100vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -40vw;
+    margin-top: -42.5vw;
+  }
+
+.bg_img5 .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+  }
+
+.bg_img5 .swiper-slide img {
+    display: block;
+    opacity: 0.3;
+    /* width: 100%; */
+    object-fit: cover;
+    position: absolute;
+    z-index: -9;
+  }
+
+.sw_title{
+    width: 90%;
+    font-size: 8vw;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.sw_title h2{
+    font-weight: 500;
+}
+.sw_title h3{
+    font-size: 6vw;
+    font-weight: 600;
+}
+.sw_con_box {
+    width: 100%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.sw_con_box h4{
+    font-size:  6vw;
+    font-weight: 400;
+}
+.sw_con_box h5{
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.sw_but_wrap{
+    width: 60%;
+    height: 50px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    margin-left: -30%;
+}
+.sw_but_wrap a{
+    color: #fff;
+}
+.sw_but{
+    width: 100%;
+    height: 80%;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    border-radius: 100px;
+    margin-bottom: 5%;
+}
+
+
+
+/* --------------------------------------- */
+.mo_vd_menu{
+    width: 1500px;
+    height: 600px;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -750px;
+    /* transform-style: preserve-3d;
+    perspective: 500px; */
+    transform: rotate(90deg) ;
+    scale: 0.7;
+}
+.mo_sub_wrap{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: 1s;
+    transform: scaleX(0.003) scaleY(0.2) ;
+}
+.mo_vd_menu .swiper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top:-120%;
+    /* scale: 0.8; */
+    display: none;
+    }
+
+.mo_vd_menu .swiper-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mo_vd_menu .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 350px;
+    /* background-color: coral; */
+    box-shadow: 5px 5px 50px 5px rgb(117, 117, 117);
+    }
+
+.mo_vd_menu .swiper-slide img {
+    display: block;
+    width: 100%;
+    }
+
+.m_vd_title{
+    width: 40vw;
+    height: 10vw;
+    font-size: 5vw;
+    font-weight: 600;
+    position: absolute;
+    top:40%;
+    left: 50%;
+    margin-left: -20vw;
+    text-align: center;
+}
+
+/* ------------------------------------------- */
+    .m_footer_wrap video{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .m_b_img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .m_ct_wrap{
+        width: 60%;
+        /* height: 600px; */
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        margin-left: -30%;
+        /* background-color: aqua; */
+        display: none;
+        z-index: 999;
+    }
+    .m_ct_wrap ul{
+        width: 50%;
+        height: 100px;
+        /* float: left; */
+        /* background-color: aqua; */
+        color: #c0caff;
+        font-size: 15px;
+        font-weight: 600;
+        position: relative;
+    }
+    .m_ct_wrap ul:last-child{
+        width: 100%;
+        position: relative;
+    }
+    .m_ct_wrap ul:last-child li{
+        position: relative;
+    }
+    /* .last_li{
+        top: -60px;
+        left: 50%;
+    }
+     */
+    
+    .m_ct_wrap li{
+        width: 100%;
+        color: #fff;
+        font-weight: 200;
+        font-size: 20px;
+        margin-top: 10%;
+        line-height: 20px;
+        /* background-color: aqua; */
+    }
+    .m_ct_wrap a{
+        color: #fff;
+        font-weight: 200;
+    }
+    .m_ct_wrap img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .m_ufo_footer{
+        width: 800px;
+        height:1000px;
+        position: absolute;
+        left: -400px;
+        bottom: -600px;
+        transform: rotate(30deg) scale(0.6);
+    }
+    
+    
+    .m_copyright{
+        width: 100%;
+        height: 100px;
+        font-weight: 20px;
+        text-align: center;
+        font-weight: 200;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: #fff;
+        font-size: 12px;
+    }
+
+    /* --------------------------------------------------------고정메뉴 */
+    
+    .m_rt_text{
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        font-size: 9vw;
+    
+    }
+    .m_rt_text a{
+        color: #000;
+        font-weight:500;
+    }
+    .m_rt_text h3:hover{
+        font-style: italic;
+        font-weight: 900;
+        transition-duration: 0.5s;
+    }
+    .m_rt_text h3:hover a{
+        font-style: italic;
+        font-weight: 900;
+        color:rgb(189, 154, 255)
+    
+    }
+    .rt_text h3:hover::before{
+        content:'';
+        display: inline-block;
+        width: 5.8vw;
+        height: 3.6vw;
+        margin-right:10px;
+        background-image: url(https://i.postimg.cc/vmBkNCFp/roket-1.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        transition-duration: 0.5s;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 지우지마쇼 */
+}
