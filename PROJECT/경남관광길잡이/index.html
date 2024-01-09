@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경남관광길잡이</title>
+    <link href="./img/DOGO_logo.png" rel="icon" type="image/png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/common.css" type="text/css">
+    <link rel="stylesheet" href="./css/pc.css" type="text/css">
+    <link rel="stylesheet" href="./css/note.css" type="text/css">
+    <link rel="stylesheet" href="./css/tap.css" type="text/css">
+    <link rel="stylesheet" href="./css/mo.css" type="text/css">
+    <script src="./js/code.jquery.com_jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/JQindex.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="page_wrap">
+            <header>
+                <h1 class="main_logo">
+                    <a href="#"><img src="./img/main_logo.png" alt="로고이미지"></a>
+                </h1>
+                <nav class="main_menu_wrap">
+                    <ul class="main_menu">
+                        <li><a href="https://tour.gyeongnam.go.kr/board/list.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401001000000&contentsSid=10275&cpath=">경남명소</a>
+                            <ul class="sub_menu_wrap">
+                                <li><a target="_blank" href="https://tour.gyeongnam.go.kr/board/list.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401001000000&startPage=1&orderBy=&categoryCode1=06&categoryCode2=&searchType=DATA_TITLE&keyword=">자연관광</a></li>
+                                <li><a target="_blank" href="https://tour.gyeongnam.go.kr/board/list.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401002000000&startPage=1&orderBy=&categoryCode1=07&categoryCode2=&searchType=DATA_TITLE&keyword=">문화관광</a></li>
+                                <li><a target="_blank" href="https://tour.gyeongnam.go.kr/board/list.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401006000000&startPage=1&orderBy=&categoryCode1=04&categoryCode2=&searchType=DATA_TITLE&keyword=">역사관광</a></li>
+                                <li><a target="_blank" href="https://tour.gyeongnam.go.kr/board/list.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401003000000&startPage=1&orderBy=&categoryCode1=08&categoryCode2=&searchType=DATA_TITLE&keyword=">레저관광</a></li>
+                                <li><a target="_blank" href="https://tour.gyeongnam.go.kr/board/list.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401007000000&startPage=1&orderBy=&categoryCode1=05&categoryCode2=&searchType=DATA_TITLE&keyword=">체험관광</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="main_menu">
+                        <li><a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009402000000000">테마여행</a>
+                            <ul class="sub_menu_wrap">
+                                <li><a target="_blank" href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009402000000000">5대 테마 버스투어</a></li>
+                                <li><a target="_blank" href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009402016000000">이순신 순례길</a></li>
+                                <li><a target="_blank" href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009402017005000&cpath=">경남 한 달 여행</a></li>
+                                <li><a target="_blank" href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009402015000000">열린관광</a></li>
+                                <li><a target="_blank" href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009402012000000">웰니스관광지</a></li>
+                                <li><a target="_blank" href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009402013000000">유네스코여행</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="main_menu">
+                        <li><a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009403000000000">관광정보</a>
+                            <ul class="sub_menu_wrap">
+                                <li><a target="_blank" href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009403000000000">추천여행</a></li>
+                                <li><a target="_blank" href="https://tour.gyeongnam.go.kr/board/list.gyeong?boardId=BBS_0000885&CategoryCode1=JJ&menuCd=DOM_000009403012000000&contentsSid=9248&cpath=">경치좋은여행</a></li>
+                                <li><a target="_blank" href="https://tour.gyeongnam.go.kr/board/list.gyeong?boardId=BBS_0002007&menuCd=DOM_000009403002001000&categoryCode1=mon_12">축제</a></li>
+                                <li><a target="_blank" href="https://tour.gyeongnam.go.kr/board/list.gyeong?boardId=BBS_0000907&menuCd=DOM_000009403003001001&startPage=1&commentPage=1&keyword=&cpath=">숙박/교통/음식</a></li>
+                                <li><a target="_blank" href="https://tour.gyeongnam.go.kr/board/list.gyeong?boardId=BBS_0000891&menuCd=DOM_000009403013000000&contentsSid=9294&cpath=">체험관광</a></li>
+                                <li><a target="_blank" href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009403006000000">경남시티투어</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="main_menu">
+                        <li><a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406008000000">경남가이드</a>
+                            <ul class="sub_menu_wrap">
+                                <li><a target="_blank" href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406008000000">관광안내책자</a></li>
+                                <li><a target="_blank" href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406001000000">경남소개</a></li>
+                                <li><a target="_blank" href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406009000000">여행도우미</a></li>
+                                <li><a target="_blank" href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406009000000">경남관광슬로건</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="main_menu">
+                        <li><a href="https://tour.gyeongnam.go.kr/board/list.gyeong?boardId=BBS_0002002&menuCd=DOM_000009407001000000&contentsSid=10237&cpath=">커뮤니티</a>
+                            <ul class="sub_menu_wrap">
+                                <li><a target="_blank" href="https://tour.gyeongnam.go.kr/board/list.gyeong?boardId=BBS_0002002&menuCd=DOM_000009407001000000&contentsSid=10237&cpath=">공지사항</a></li>
+                                <li><a target="_blank" href="https://tour.gyeongnam.go.kr/board/write.gyeong?boardId=BBS_0002003&menuCd=DOM_000009407007000000&cpath=">홍보물신청</a></li>
+                                <li><a target="_blank" href="https://tour.gyeongnam.go.kr/board/list.gyeong?boardId=BBS_0000861&menuCd=DOM_000009407008000000&contentsSid=9035&cpath=">여행사 신청</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="google_translate_element"></div>
+                <div class="fixed_menu_but">
+                    <div class="f_but">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </header>
+            <div class="main_banner">
+               <a target="_blank" href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406001000000"><img src="./img/pc_banner.png" alt="배너이미지"></a>
+            </div>
+            <div class="fastival_wrap">
+                <h3 class="title fastival_title">경남 축제 행사
+                    <p>#경남을 더 재미있게! 축제정보를 확인하세요.</p>
+                </h3>
+                <div #swiperRef="" class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <a target="_blank" href="https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=1e141ca8-3663-4289-b1de-f1f8a3be5f09">
+                            <img src="./img/festival5.png" alt="축제이미지">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a target="_blank" href="https://www.foresttrip.go.kr/indvz/main.do?hmpgId=ID02030077">
+                            <img src="./img/festival8.png" alt="축제이미지">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a target="_blank" href="https://www.changwon.go.kr/cwportal/depart/11063/14383/14384.web">
+                            <img src="./img/festival7.png" alt="축제이미지">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a target="_blank" href="https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=0d35a98b-1be9-4244-a5f0-8622f5b877e4">
+                            <img src="./img/festival6.png" alt="축제이미지">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next but left_but"></div>
+                    <div class="swiper-button-prev but right_but"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+        </div>
+<!-- main_page종료----------------------------------------------main_page종료-->
+        <div class="page_wrap_padding">
+            <section class="proposal_wrap">
+                <h3 class="title">이달의 추천 여행지
+                    <p>#꼭 가봐야 할 이달의 추천 여행지!</p>
+                </h3>
+                <div class="proposal_slide">
+                    <div #swiperRef="" class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a target="_blank" href="https://tour.gyeongnam.go.kr/board/view.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401002000000&startPage=1&dataSid=42031628">
+                                <img src="./img/Proposal1.png" alt="여행지이미지">
+                                <div class="pro_con_box">
+                                    <h3>양산 천성산</h3>
+                                    <p>동해의 일출을 가장 먼저 볼 수 있는 곳으로 해돋이를 보기 위해 많은 관광객이 찾고 있는 곳</p>
+                                </div>
+                                <!-- <div class="pro_con_title">양산 천성산</div> -->
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a target="_blank" href="https://tour.gyeongnam.go.kr/board/view.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401002000000&startPage=1&dataSid=42027183">
+                                <img src="./img/Proposal10.png" alt="여행지이미지">
+                                <div class="pro_con_box">
+                                    <h3>사천 각산전망대</h3>
+                                    <p>전국10대 일몰로 유명한 실안 노을, 최초 섬과 섬을 이은 창선삼천포대교, 아기자기한 섬들을 품고 있는 전망대</p>
+                                </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a target="_blank" href="https://tour.gyeongnam.go.kr/board/view.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401002000000&startPage=1&dataSid=41841400">
+                                <img src="./img/Proposal3.png" alt="여행지이미지">
+                                <div class="pro_con_box">
+                                    <h3>거제 케이블카</h3>
+                                    <p>상부 전망대에서는 바다 위 다도해 섬들과 노자산, 하늘이 맞닿아 이뤄내는 절경을 경계 없이 360도로 관람</p>
+                                </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a target="_blank" href="">
+                                <img src="./img/Proposal4.jpg" alt="여행지이미지">
+                                <div class="pro_con_box">
+                                    <h3>거창 별바람언덕</h3>
+                                    <p>SNS상에서 인생사진 명소로 유명한 거창 별바람 언덕은 보랏빛 아스타 국화 물결과 일몰과 일출 명소</p>
+                                </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a target="_blank" href="https://tour.gyeongnam.go.kr/board/view.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401002000000&startPage=1&dataSid=2504646">
+                                <img src="./img/Proposal5.jpg" alt="여행지이미지">
+                                <div class="pro_con_box">
+                                    <h3>지리산국립공원</h3>
+                                    <p>지리산은 수많은 식물과 동물, 그리고 사람들에게 삶터를 제공해주는 생명의 산</p>
+                                </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a target="_blank" href="https://tour.gyeongnam.go.kr/board/view.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401002000000&startPage=1&dataSid=2504564">
+                                <img src="./img/Proposal6.png" alt="여행지이미지">
+                                <div class="pro_con_box">
+                                    <h3>통영 미륵산</h3>
+                                    <p>통영항과 한려수도를 한 눈에 담을 수 있으며 케이블카와 연결되어 많은 관광객들이 즐겨 찾는 산행지</p>
+                                </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a target="_blank" href="https://tour.gyeongnam.go.kr/board/view.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401002000000&startPage=1&dataSid=42026657">
+                                <img src="./img/Proposal7.png" alt="여행지이미지">
+                                <div class="pro_con_box">
+                                    <h3>고성 문수암</h3>
+                                    <p>산정에 오르면 남해안 한려해상국립공원의 많은 섬을 조망할 수 있어 등산객과 관광객의 발길이 끊이질 않고 있는 신라의 고찰</p>
+                                </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a target="_blank" href="https://tour.gyeongnam.go.kr/board/view.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401002000000&startPage=1&dataSid=41840886">
+                                <img src="./img/Proposal8.png" alt="여행지이미지">
+                                <div class="pro_con_box">
+                                    <h3>김해 분산성</h3>
+                                    <p>김해 전경을 둘러볼 수 있는 명소 중 하나로 곳곳에 sns 인기 포토존</p>
+                                </div>
+                            </a>
+                          </div>
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next but right_but"></div>
+                    <div class="swiper-button-prev but left_but"></div>
+                </div>
+            </section>
+            <div class="bus_tour">
+                <img src="./img/bustour.png" alt="버스투어베너이미지">
+                <div class="bus_con">
+                    <h2>5대 테마 버스투어</h2>
+                    <p># 경남 특화 대표 5대 테마 관광</p>
+                    <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009402014000000" target="_blank">
+                        신청 바로가기 
+                    </a>
+                </div>
+            </div>
+        </div>
+<!-- page2종료----------------------------------------------page2종료-->
+        <section class="page_wrap_padding">
+            <div class="theme_wrap">
+                <div class="theme_left_box">
+                    <h3 class="title">경남테마여행</h3>
+                    <!-- <p># 키워드로 찾아보는 알짜배기 경남여행지!</p> -->
+                    <h4>
+                        한국관광 100선<br>경남 7선
+                    </h1>
+                    <div class="search_wrap">
+                        <input class="theme_search" type="text" placeholder="#가야 테마파크">
+                        <div class="s_icon">
+                            <img src="./img/Search_icon.png" alt="검색아이콘">
+                        </div>
+                    </div>
+                </div>
+                <div class="theme_right_box">
+                    <div class="theme_box theme_box1">
+                        <a href="https://tour.gyeongnam.go.kr/board/view.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401002000000&startPage=1&dataSid=2506085&categoryCode1=02&categoryCode2=&categoryCode3=&searchType=DATA_TITLE&keyword=%EA%B0%80%EC%95%BC%ED%85%8C%EB%A7%88" target="_blank">
+                            # 가야 테마파크</a>
+                    </div>
+                    <div class="theme_box theme_box2">
+                        <a href="https://tour.gyeongnam.go.kr/board/view.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401001000000&startPage=1&dataSid=41815020&categoryCode1=01&categoryCode2=&categoryCode3=&searchType=DATA_TITLE&keyword=%ED%95%AD%EB%85%B8%ED%99%94" target="_blank">
+                            # 황노화 힐링랜드</a>
+                    </div>
+                    <div class="theme_box theme_box3">
+                        <a href="https://tour.gyeongnam.go.kr/board/view.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401002000000&startPage=1&dataSid=2504969&categoryCode1=02&categoryCode2=&categoryCode3=&searchType=DATA_TITLE&keyword=%EC%A7%84%EC%A3%BC%EC%84%B1" target="_blank">
+                            # 진주성</a>
+                    </div>
+                    <div class="theme_box theme_box4">
+                        <a href="https://tour.gyeongnam.go.kr/board/view.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401002000000&startPage=1&dataSid=2506038&categoryCode1=02&categoryCode2=&categoryCode3=&searchType=DATA_TITLE&keyword=%EC%97%AC%EC%A2%8C%EC%B2%9C" target="_blank">
+                            # 여좌천 벚꽃</a>
+                    </div>
+                    <div class="theme_box theme_box5">
+                        <a href="https://tour.gyeongnam.go.kr/board/view.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401001000000&startPage=1&dataSid=41814333&categoryCode1=01&categoryCode2=&categoryCode3=&searchType=DATA_TITLE&keyword=%ED%99%A9%EB%A7%A4%EC%82%B0" target="_blank">
+                            # 황매산 군립공원</a>
+                    </div>
+                    <div class="theme_box theme_box6">
+                        <a href="https://tour.gyeongnam.go.kr/board/view.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401002000000&startPage=1&dataSid=41814740&categoryCode1=02&categoryCode2=&categoryCode3=&searchType=DATA_TITLE&keyword=%EB%94%94%ED%94%BC%EB%9E%91" target="_blank">
+                            # 디피랑</a>
+                    </div>
+                    <div class="theme_box theme_box7">
+                        <a href="https://tour.gyeongnam.go.kr/board/view.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401002000000&startPage=1&dataSid=2504750&categoryCode1=02&categoryCode2=&categoryCode3=&searchType=DATA_TITLE&keyword=%EB%8B%B9%ED%95%AD%ED%8F%AC" target="_blank">
+                            # 당황포</a>
+                    </div>
+                </div>
+            </div>
+            <div class="wellness_wrap">
+                <div class="wellness_img_box">
+                    <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009402012011000" target="_blank">
+                        <img src="./img/wellness_1.jpg" alt="웰니스황매산">
+                    </a>
+                    <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009402012001000" target="_blank">
+                        <img src="./img/wellness_2.jpg" alt="웰니스산청">
+                    </a>
+                    <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009402012003000" target="_blank">
+                        <img src="./img/wellness_3.jpg" alt="웰니스거제">
+                    </a>
+                    <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009402012005000" target="_blank">
+                        <img src="./img/wellness_4.jpg" alt="웰니스오도산">
+                    </a>
+                    <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009402012004000" target="_blank">
+                        <img src="./img/wellness_5.jpg" alt="웰니스통영">
+                    </a>
+                    <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009402012006000" target="_blank">
+                        <img src="./img/wellness_6.jpg" alt="웰니스거창">
+                    </a>
+                </div>
+                <div class="wellness_tilte">
+                    <h2>경남 웰니스 관광지</h2>
+                    <div class="img_title">
+                        <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009402012011000" target="_blank">
+                            합천 황매산 군립공원
+                        </a>
+                        <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009402012001000" target="_blank">
+                            산청 동의보감촌
+                        </a>
+                        <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009402012003000" target="_blank">
+                            거제 한화 벨버디어
+                        </a>
+                        <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009402012005000" target="_blank">
+                            오도산 치유의 숲
+                        </a>
+                        <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009402012004000" target="_blank">
+                            통영 나폴리농원
+                        </a>
+                        <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009402012006000" target="_blank">
+                            거창 황노화 힐링랜드
+                        </a>
+                    </div>
+                    <div class="well_arrow_wrap">
+                        <p class="left_arrow">&lt;</p>
+                        <p><span class="well_num">1</span> / 6</p>
+                        <p class="right_arrow">&gt;</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- page3종료----------------------------------------------page3종료-->
+        <section class="page_wrap">
+            <div class="sns_con_wrap">
+                <h3 class="title">경남여행SNS</h3>
+                <p># SNS속 화제의 경남 다양한 여행정보</p>
+                <div class="sns_slide">
+                    <div #swiperRef="" class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a target="_blank" href="https://www.instagram.com/p/C0i2UEZsI_-/">
+                                <img src="./img/sns1.jpg" alt="축제이미지">
+                                <div class="sns_con_box">
+                                    <div class="icon_box">
+                                        <img src="./img/sns_icon.png" alt="sns이미지">
+                                    </div>
+                                    <h3>@gsnd_kr</h3>
+                                    <p>이번 12월에 노량해전을 다룬 이순신영화가 개봉한다고 해요~🎥
+                                        오늘은 노량대교에 대해 소개해 드릴게요!🔍
+                                        
+                                        노량대교는 제2 남해대교 역할을 하며,
+                                        이순신의 승리를 기념하는 다리인데요!⭐️
+                                        
+                                        충무공 이순신이 혹독했던 임진왜란 7년전쟁의 종지부를 찍은
+                                        승리의 해전인 ‘노량해협’을 만나는 가슴 뭉클한 곳이랍니다!🥹
+                                        
+                                        낮에도 멋있는 곳이지만, 밤이 되면 노량대교에 펼쳐지는
+                                        불빛들로 화려한 야경도 볼 수 있답니다~👀
+                                        노량대교로 드라이브 즐기러 오세요~!🚗
+                                        
+                                        📍 경상남도 하동군 금남면 노량리 노량대교
+                                        
+                                        #노량 #노량해전 #이순신영화 #노량영화 #하동 #노량여행 #하동여행 #경남여행 #경남여행의모든것 #경남맛집 #경남카페</p>
+                                </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a target="_blank" href="https://www.instagram.com/p/C0a4Z_-ty0v/?img_index=1">
+                                <img src="./img/sns2.jpg" alt="축제이미지">
+                                <div class="sns_con_box">
+                                    <div class="icon_box">
+                                        <img src="./img/sns_icon.png" alt="sns이미지">
+                                    </div>
+                                    <h3>@gsnd_kr</h3>
+                                    <p>남해바다와 계단식 논을 함께 볼 수 있는 이곳은,
+                                        남해 다랭이마을입니다~!🍃
+                                        
+                                        다랭이마을은 남해여행 중 필수 코스인 곳인데요!🔥
+                                        산기슭에서 바닷가 근처까지 계단처럼 층층이 나누어져, 독특한 논으로 유명하답니다~🤗
+                                        
+                                        다랭이마을 전망대에는 유명한 포토존도 있는데요!🤳
+                                        마을 전체의 모습과 남해 바다를 한눈에 담아낼 수 있답니다~👀
+                                        
+                                        남해 여행을 가게 된다면, 다랭이마을에 꼭 들러보시길 추천드려요~!🚙
+                                        다랭이마을 전망대 포토존에서 사진 찍는 것도 잊지 마시고요~🚨
+                                        
+                                        📍 경남 남해군 남면 남면로 702 다랭이마을 제 1주차장
+                                        📸 o3o._.ss
+                                        
+                                        #남해 #다랭이마을 #남해다랭이마을 #남해여행 #경남여행 #경남여행의모든것 #경남맛집 #경남카페</p>
+                                </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a target="_blank" href="https://www.instagram.com/p/C0IVlCnC2y-/?img_index=1">
+                                <img src="./img/sns3.jpg" alt="축제이미지">
+                                <div class="sns_con_box">
+                                    <div class="icon_box">
+                                        <img src="./img/sns_icon.png" alt="sns이미지">
+                                    </div>
+                                    <h3>@gsnd_kr</h3>
+                                    <p>추운 겨울 자연과 함께 할 수 있는!
+                                        꽃과 나무의 숨결 속에서 치유의 시간을 가질 수 있는! 거제식물원입니다!🌴
+                                        
+                                        이곳에서는 지역의 식물 생태계를 비롯하여 열대, 난대, 온대 등
+                                        다양한 환경의 식물을 한눈에 관찰하고 체험해 볼 수 있는
+                                        고품격 체험, 연구, 전시, 교육, 휴식의 공간까지 갖추고 있답니다!🌷
+                                        
+                                        추운 겨울 실내에서 따뜻하게 자연을 만끽할 수 있는🌬
+                                        거제식물원으로 놀러 오세요~🚡
+                                        
+                                        - 거제정글돔 운영시간(동절기 11월~2월) : 09:30~17:00(16:00 매표, 입장마감)
+                                        - 거제정글돔외 구역 : 09:00~18:00
+                                        - 휴원일 : 매주 월요일
+                                        - 입장료 : 일반 5,000원, 청소년 4,000원, 어린이 3,000원
+                                        
+                                        📍 경남 거제시 거제면 거제남서로 3595 거제식물원
+                                        
+                                        #거제 #정글돔 #거제정글돔 #거제식물원 #거제도 #거제여행 #경남여행 #경남여행의모든것 #경남맛집 #경남카페
+                                        </p>
+                                </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a target="_blank" href="https://www.instagram.com/p/C0NfdGbANh9/">
+                                <img src="./img/sns4.jpg" alt="축제이미지">
+                                <div class="sns_con_box">
+                                    <div class="icon_box">
+                                        <img src="./img/sns_icon.png" alt="sns이미지">
+                                    </div>
+                                    <h3>@gsnd_kr</h3>
+                                    <p>경남관광길잡이의 슬로건은 무엇일까요?🔍
+
+                                        🌟이벤트 당첨자 발표🌟
+                                        정말 많은 분들이 참여해주셨는데요!😮
+                                        이벤트에 참여해주신 모든 분들께 감사의 인사 전합니다💖
+                                        
+                                        앞으로도 경남여행이 궁금하다면
+                                        경남관광 길잡이에 놀러오세요~!
+                                        (프로필링크를 통해 경남관광길잡이 홈페이지를 이용하실 수 있습니다.)
+                                        </p>
+                                </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a target="_blank" href="https://www.instagram.com/p/C0QNZ98P3rA/">
+                                <img src="./img/sns5.jpg" alt="축제이미지">
+                                <div class="sns_con_box">
+                                    <div class="icon_box">
+                                        <img src="./img/sns_icon.png" alt="sns이미지">
+                                    </div>
+                                    <h3>@gsnd_kr</h3>
+                                    <p>오늘은 드론으로 내려다본 창녕의 영산 만년교 모습을 보여드릴게요~!😆
+                                        가을의 영산 만년교는 노란색 크레파스로 칠한 것 같았답니다!💛
+                                        
+                                        이곳은 가을뿐만 아니라 사계절 내내 예쁜 곳으로 유명하죠~🎀
+                                        다리 위에 올라서서 물에 비친 모습을 사진으로 담아내면 예술이랍니다!📸
+                                        
+                                        가을 지나서 아쉬워하지 않으셔도 돼요~!😭
+                                        겨울의 영산 만년교는 더욱 운치 있어진답니다~🫧
+                                        
+                                        창녕 방문 시 영산 만년교 들리는 거 잊지마시고 꼭 가보시길 추천드려요~!👍
+                                        
+                                        📍 경남 창녕군 영산면 동리 만년교
+                                        
+                                        #창녕 #영산만년교 #창녕영산만년교 #만년교 #창녕여행 #경남여행 #경남여행의모든것 #경남맛집 #경남카페</p>
+                                </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a target="_blank" href="https://www.instagram.com/p/C0gOWnzO9lw/?img_index=1">
+                                <img src="./img/sns6.jpg" alt="축제이미지">
+                                <div class="sns_con_box">
+                                    <div class="icon_box">
+                                        <img src="./img/sns_icon.png" alt="sns이미지">
+                                    </div>
+                                    <h3>@gsnd_kr</h3>
+                                    <p>여러분! 나혼자산다 TV프로그램에 방영된 사천 비토섬 이장우 굴먹방을 보셨나요?!😆
+                                        이장우님이 다녀가신 곳은 비행토끼섬 비토섬이었답니다~🙌
+                                        
+                                        비토섬 갯벌은 바다의 레스토랑이라고 불릴 정도로 굴이 가득한 곳인데요!🍱
+                                        우리나라에 얼마 남지 않은 청정 갯벌 중 하나라고 해요~🫧
+                                        
+                                        12월에는 굴따기체험이 운영되고 있답니다!🏖
+                                        이장우님처럼 굴을 직접 캐고, 굴구이 해먹을 수 있는 기회니 놓치지 마세요~🔥
+                                        
+                                        해양낚시공원, 리조트, 캠핑장도 있어 캠핑명소로도 유명한 곳이랍니다!🔍
+                                        굴 먹방을 할 수 있는 사천 비토섬에 놀러 오세요~🚙
+                                        
+                                        📍 경남 사천시 서포면 비토리 비토섬
+                                        
+                                        #사천 #비토섬 #나혼자산다 #이장우 #비토섬이장우 #사천여행 #경남여행 #경남여행의모든것 #경남맛집 #경남카페</p>
+                                </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a target="_blank" href="https://www.instagram.com/p/C0gOWnzO9lw/?img_index=1">
+                                <img src="./img/sns7.jpg" alt="축제이미지">
+                                <div class="sns_con_box">
+                                    <div class="icon_box">
+                                        <img src="./img/sns_icon.png" alt="sns이미지">
+                                    </div>
+                                    <h3>@gsnd_kr</h3>
+                                    <p>우리나라 3대 누각 중 하나인 진주 촉석루는
+                                        진주성 3개의 문 중 촉석문 근처에 있는 누각인데요!🙌
+                                        
+                                        촉석루는 진주 남강 절벽 위에 정면 5칸, 측면 4칸 구조로 지어져 있다고 해요!🔍
+                                        남강 위 높은 언덕에 위치하고 있어, 전쟁 때 성을 지키는 본부 역할을 했답니다~🫢
+                                        
+                                        현재 촉석루는 6·25 전쟁 때 화재로 소실되어 1960년대에 재건되었는데요!🧐
+                                        1983년 경상남도 문화재자료로 지정되었다가, 2020년에 경상남도 유형문화재로 승격되었답니다!👍
+                                        
+                                        맑은 날 방문하게 되면 남강에 비친 촉석루와 아름다운 자연을 즐길 수 있다고 해요~!🍂
+                                        진주성 촉석루에서 탁 트인 남강과 진주 경치를 즐기러 놀러오세요~🚘
+                                        
+                                        📍 경남 진주지 본성동 촉석루
+                                        
+                                        #진주 #진주성 #촉석루 #진주촉석루 #진주여행 #경남여행 #경남여행의모든것 #경남맛집 #경남카페</p>
+                                </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a target="_blank" href="https://www.instagram.com/p/C0NrGLhLOT9/?img_index=1">
+                                <img src="./img/sns8.jpg" alt="축제이미지">
+                                <div class="sns_con_box">
+                                    <div class="icon_box">
+                                        <img src="./img/sns_icon.png" alt="sns이미지">
+                                    </div>
+                                    <h3>@gsnd_kr</h3>
+                                    <p>🔥대한민국 밤밤곡곡 100 방문 인증샷 이벤트🔥
+
+                                        대한민국 밤밤곡곡 100은 “밤이 더 아름다운 대한민국”을 위하여
+                                        새롭고 다채로운 야간관광 콘텐츠를 마련하고자 탄생한 공식 브랜드입니다!🙌
+                                        
+                                        누구에게나 익숙한 야간콘텐츠 50개와
+                                        잠재력이 있는 소도시 자원 50개로 고루 선정되어 있다고 해요!🎉
+                                        명소형과 루키형에 선정된 경남은 어디일지 함께 알아볼까요~?🔍
+                                        
+                                        * 나만 알고싶은 야간 콘텐츠 : 명소형
+                                        진주 ㅣ 진주문화재 야행
+                                        통영 ㅣ 디피랑
+                                        
+                                        * 나만 몰랐던 야간 콘텐츠 : 루키형
+                                        사천 ㅣ 사천바다케이블카
+                                        진주 ㅣ 올빰야시장, 진주남강유등축제
+                                        창원 ㅣ 귀산개구리섬 프로젝션 맵핑
+                                        통영 ㅣ 강구안문화광장
+                                        함안 ㅣ 함안낙화놀이
+                                        
+                                        방문 인증샷 이벤트에 참여해주시면
+                                        추첨을 통해 경품을 드리니 많은 참여 부탁드립니다~!🎁
+                                        
+                                        - 참여방법
+                                        1) 대한민국 밤밤곡곡 100 확인하기
+                                        2) 개인 SNS에 내가 다녀온 대한민국 밤밤곡곡 100 인증하기
+                                        3) 업로드 사진 or 영상 캡쳐 후 http://bit.ly/bamgok100_event 로 응모하기
+                                        4) 필수 해시태그 #대한민국밤밤곡곡 #야간관광 #밤밤곡곡 #밤곡100 #내가다녀온밤곡100콘텐츠명(예시 #DDP)
+                                        
+                                        - 참여기간
+                                        2023. 11. 24. (금) ~ 2023. 12. 03 (일)
+                                        
+                                        - 당첨자발표
+                                        2023. 12. 06 (수) 예정
+                                        대한민국구석구석 홈페이지에서 발표예정!
+                                        
+                                        #대한민국밤밤곡곡 #야간관광 #밤밤곡곡 #밤곡100 #경남</p>
+                                </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a target="_blank" href="https://www.instagram.com/p/C0LZldLM1XE/?img_index=1">
+                                <img src="./img/sns9.jpg" alt="축제이미지">
+                                <div class="sns_con_box">
+                                    <div class="icon_box">
+                                        <img src="./img/sns_icon.png" alt="sns이미지">
+                                    </div>
+                                    <h3>@gsnd_kr</h3>
+                                    <p>여러분! 밀양에 아이유와 이준기가 나온 드라마,
+                                        달의 연인 보보경심 려 촬영지가 있다는 것 아셨나요?👀
+                                        오늘은 드라마 촬영지였던 위양지와 완재정에 대해 소개해 드릴게요!😆
+                                        
+                                        위양지는 신라 때 축조되었던 논에 물을 대던 수리 저수지였다고 해요.🖇
+                                        완재정은 위양지 연못에 떠 있는 작은 섬 하나에 만들어진 정자로,
+                                        달의 연인 보보경심 려 촬영지로도 유명하답니다!👍
+                                        
+                                        거울에 비춘 것처럼 물에 잠긴 자연이 아름답지 않나요?🫧
+                                        둘레길을 따라 걸으며 물속에 비친 하늘과 자연의 모습을 감상하기 좋답니다~🚶
+                                        
+                                        완재정 포토존에서 사진도 찍고, 물에 비친 자연을 감상하러📸
+                                        밀양의 위양지에 놀러 가보는 거 어떤가요~?🚗
+                                        
+                                        📍 경남 밀양시 부북면 위양리 279-2 (위양지주차장)
+                                        
+                                        #밀양 #위양지 #완재정 #보보경심려 #드라마촬영지 #밀양여행 #경남여행 #경남여행의모든것 #경남맛집 #경남카페</p>
+                                </div>
+                            </a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next but left_but"></div>
+                    <div class="swiper-button-prev but right_but"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="down_wrap">
+                <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406008000000" class="down_box down_box1">
+                    <img src="./img/e-book.png" alt="배경이미지" class="down_bg">
+                    <img src="./img/e-book_icon.png" alt="e-book이미지" class="Ebook down_img">
+                    <p>2024 경남 여행자 지도</p>
+                    <h3>E-BOOK 다운</h3>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=kr.go.gyeongnam.guide&hl=ko&gl=US&pli=1" class="down_box down_box2">
+                    <img src="./img/bg_app.png" alt="배경이미지" class="down_bg">
+                    <img src="./img/app.png" alt="App_icon" class="App_icon down_img">
+                    <p>스마트 투어 APP</p>
+                    <h3>다운로드 하기</h3>
+                </a>
+            </div>
+        </section>
+<!-- page4종료----------------------------------------------page4종료-->
+        <section class="page_wrap_padding page_t">
+            <h3 class="title">경남여행가이드</h3>
+            <p>#여행 전 필요하고 유용한 정보를 확인하세요.</p>
+            <div class="guide_left_box guide_box">
+                <a href="https://tour.gyeongnam.go.kr/board/list.gyeong?boardId=BBS_0000907&menuCd=DOM_000009403003001001&startPage=1&commentPage=1&keyword=&cpath=" class="g_box">
+                    <img src="./img/hotel.jpg" alt="가이드이미지">
+                    <h3>숙소</h3>
+                    <p>다양한 숙박시설 정보를 확인해보세요.</p>
+                </a>
+                <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009403003003000" class="g_box">
+                    <img src="./img/food2.jpg" alt="가이드이미지">
+                    <h3>음식</h3>
+                    <p>경남의 각 시·군의<br> 먹거리 정보를 제공합니다.</p>
+                </a>
+            </div>
+            <div class="guide_right_box guide_box">
+                <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009403003002000" class="g_box">
+                    <img src="./img/trans.jpg" alt="가이드이미지">
+                    <h3>교통</h3>
+                    <p>경남의 각 시군별 교통수단을 안내합니다.</p>
+                </a>
+                <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009403006000000" class="g_box">
+                    <img src="./img/culture.jpg" alt="가이드이미지">
+                    <h3>시티투어</h3>
+                    <p>경남을 찾아 떠나는 흥미진진한 여행! <br>시티투어와 함께하세요.</p>
+                </a>
+                <a href="https://tour.gyeongnam.go.kr/board/list.gyeong?boardId=BBS_0000891&menuCd=DOM_000009403013000000&contentsSid=9294&cpath=" class="g_box">
+                    <img src="./img/promotion.jpg" alt="가이드이미지">
+                    <h3>홍보영상</h3>
+                    <p>SNS에서 핫한 경남 여행 영상을 <br>확인해보세요.</p>
+                </a>
+            </div>
+        </section>
+<!-- page5종료----------------------------------------------page5종료-->
+        <div class="page_wrap">
+            <div class="low_banner">
+                <a href="https://tour.gyeongnam.go.kr/board/view.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401001000000&startPage=1&dataSid=42028311&categoryCode1=06,07,04,08,05&categoryCode2=&categoryCode3=&searchType=DATA_TITLE&keyword=%EC%B2%B4%ED%97%98%EA%B4%80" target="_blank">
+                    <img src="./img/low_banner1.jpg" alt="하단배너이미지">
+                    <h3>경상남도안전체험관</h3>
+                    <p>살아있는 안전 교육! 살 수 있는 체험교육!</p>
+                </a>
+                <a href="https://tour.gyeongnam.go.kr/board/view.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401001000000&startPage=1&dataSid=42054867&categoryCode1=06,07,04,08,05&categoryCode2=&categoryCode3=&searchType=DATA_TITLE&keyword=" target="_blank">
+                    <img src="./img/low_banner2.jpg" alt="하단배너이미지">
+                    <h3>노량대교</h3>
+                    <p>노량해전, 이순신 장군의 마지막 견적지!</p>
+                </a>
+                <a href="https://tour.gyeongnam.go.kr/board/view.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401001000000&startPage=1&dataSid=2504641&categoryCode1=06&categoryCode2=&categoryCode3=&searchType=DATA_TITLE&keyword=%EB%B6%80%EA%B3%A1" target="_blank">
+                    <img src="./img/low_banner3.jpg" alt="하단배너이미지">
+                    <h3>창녕부곡온천</h3>
+                    <p>뉴트로 감성의 핫플레이스</p>
+                </a>
+                <a href="https://tour.gyeongnam.go.kr/board/view.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401001000000&startPage=1&dataSid=42028351&categoryCode1=06,07,04,08,05&categoryCode2=&categoryCode3=&searchType=DATA_TITLE&keyword=%EC%8B%9C%EC%9E%A5" target="_blank">
+                    <img src="./img/low_banner4.jpg" alt="하단배너이미지">
+                    <h3>통영전통해물시장</h3>
+                    <p>수산물 가득! 남해 바다의 맛!</p>
+                </a>
+                <a href="https://tour.gyeongnam.go.kr/board/view.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401001000000&startPage=1&dataSid=2504646&categoryCode1=06,07,04,08,05&categoryCode2=&categoryCode3=&searchType=DATA_TITLE&keyword=%EC%A7%80%EB%A6%AC%EC%82%B0" target="_blank">
+                    <img src="./img/low_banner5.jpg" alt="하단배너이미지">
+                    <h3>지리산국립공원</h3>
+                    <p>눈꽃의 절경을 만나다</p>
+                </a>
+            </div>
+            <footer>
+                <div class="menu_bor"></div>
+                <div class="footer_con_wrap">
+                    <nav class="footer_menu_wrap">
+                        <div class="slide_meun_but">
+                            <span>&lt;</span>
+                            <span>ΙΙ</span>
+                            <span class="trigger_but">&gt;</span>
+                        </div>
+                        <div class="slide_meun_mask">
+                            <div class="slide_meun_move">
+                                <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406001000000" target="_blank">
+                                    창원시</a>
+                                <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406001000000" target="_blank">
+                                    진주시</a>
+                                <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406001000000" target="_blank">
+                                    통영시</a>
+                                <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406001000000" target="_blank">
+                                    사천시</a>
+                                <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406001000000" target="_blank">
+                                    김해시</a>
+                                <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406001000000" target="_blank">
+                                    밀양시</a>
+                                <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406001000000" target="_blank">
+                                    거제시</a>
+                                <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406001000000" target="_blank">
+                                    양산시</a>
+                                <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406001000000" target="_blank">
+                                    의령군</a>
+                                <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406001000000" target="_blank">
+                                    함안군</a>
+                                <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406001000000" target="_blank">
+                                    창녕군</a>
+                                <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406001000000" target="_blank">
+                                    고성군</a>
+                                <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406001000000" target="_blank">
+                                    남해군</a>
+                                <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406001000000" target="_blank">
+                                    하동군</a>
+                                <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406001000000" target="_blank">
+                                    산청군</a>
+                                <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406001000000" target="_blank">
+                                    함양군</a>
+                                <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406001000000" target="_blank">
+                                    거창군</a>
+                                <a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406001000000" target="_blank">
+                                    합천군</a>  
+                             
+                            </div>
+                        </div>
+                    </nav>
+                    <a href="#" class="footer_logo">
+                        <img src="./img/logo_footer.png" alt="로고이미지">
+                    </a>
+                    <div class="footer_con_box footer_con_box1">
+                        <p>(51154) 경상남도 창원시 의창구 중앙대로 300(사림동) 경남도청 관광진흥과</p>
+                        <p> [전화] 055-211-7760, 4635</p>
+                    </div>
+                    <div class="footer_sns">
+                        <a href="https://www.instagram.com/gsnd_kr/" target="_blank">
+                            <img src="./img/sns_icon.png" alt="sns아이콘">
+                        </a>
+                        <a href="https://www.facebook.com/gsnd.kr" target="_blank">
+                            <img src="./img/sns_icon_2.png" alt="sns아이콘">
+                        </a>
+                        <a href="https://www.youtube.com/@gyeongnamdo" target="_blank">
+                            <img src="./img/sns_icon_3.png" alt="sns아이콘">
+                        </a>
+                    </div>
+                    <div class="footer_con_box footer_con_box2">
+                        <a href=""> 이용약관 </a>|
+                        <a href=""> 이메일피싱 </a>|
+                        <a href=""> 개인정보취급방침 </a>|
+                        <a href=""> 사이트맵</a>
+                    </div>
+                    <a href="#" class="top_but">TOP</a>
+                </div>
+            </footer>
+        </div>
+<!-- 푸터종료----------------------------------------------page5종료-->
+
+    </div> <!-- 전체wrap종료-->
+    <div class="fixed_menu_wrap">
+        <div class="x_box">
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="fmain_menu_wrap">
+            <ul class="fmain_menu">
+                <li><a href="https://tour.gyeongnam.go.kr/board/list.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401001000000&contentsSid=10275&cpath=">경남명소</a>
+                    <ul class="fsub_menu_wrap">
+                        <li><a target="_blank" href="https://tour.gyeongnam.go.kr/board/list.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401001000000&startPage=1&orderBy=&categoryCode1=06&categoryCode2=&searchType=DATA_TITLE&keyword=">자연관광</a></li>
+                        <li><a target="_blank" href="https://tour.gyeongnam.go.kr/board/list.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401002000000&startPage=1&orderBy=&categoryCode1=07&categoryCode2=&searchType=DATA_TITLE&keyword=">문화관광</a></li>
+                        <li><a target="_blank" href="https://tour.gyeongnam.go.kr/board/list.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401006000000&startPage=1&orderBy=&categoryCode1=04&categoryCode2=&searchType=DATA_TITLE&keyword=">역사관광</a></li>
+                        <li><a target="_blank" href="https://tour.gyeongnam.go.kr/board/list.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401003000000&startPage=1&orderBy=&categoryCode1=08&categoryCode2=&searchType=DATA_TITLE&keyword=">레저관광</a></li>
+                        <li><a target="_blank" href="https://tour.gyeongnam.go.kr/board/list.gyeong?boardId=BBS_0002000&menuCd=DOM_000009401007000000&startPage=1&orderBy=&categoryCode1=05&categoryCode2=&searchType=DATA_TITLE&keyword=">체험관광</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="fmain_menu">
+                <li><a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009402000000000">테마여행</a>
+                    <ul class="fsub_menu_wrap">
+                        <li><a target="_blank" href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009402000000000">5대 테마 버스투어</a></li>
+                        <li><a target="_blank" href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009402016000000">이순신 순례길</a></li>
+                        <li><a target="_blank" href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009402017005000&cpath=">경남 한 달 여행</a></li>
+                        <li><a target="_blank" href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009402015000000">열린관광</a></li>
+                        <li><a target="_blank" href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009402012000000">웰니스관광지</a></li>
+                        <li><a target="_blank" href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009402013000000">유네스코여행</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="fmain_menu">
+                <li><a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009403000000000">관광정보</a>
+                    <ul class="fsub_menu_wrap">
+                        <li><a target="_blank" href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009403000000000">추천여행</a></li>
+                        <li><a target="_blank" href="https://tour.gyeongnam.go.kr/board/list.gyeong?boardId=BBS_0000885&CategoryCode1=JJ&menuCd=DOM_000009403012000000&contentsSid=9248&cpath=">경치좋은여행</a></li>
+                        <li><a target="_blank" href="https://tour.gyeongnam.go.kr/board/list.gyeong?boardId=BBS_0002007&menuCd=DOM_000009403002001000&categoryCode1=mon_12">축제</a></li>
+                        <li><a target="_blank" href="https://tour.gyeongnam.go.kr/board/list.gyeong?boardId=BBS_0000907&menuCd=DOM_000009403003001001&startPage=1&commentPage=1&keyword=&cpath=">숙박/교통/음식</a></li>
+                        <li><a target="_blank" href="https://tour.gyeongnam.go.kr/board/list.gyeong?boardId=BBS_0000891&menuCd=DOM_000009403013000000&contentsSid=9294&cpath=">체험관광</a></li>
+                        <li><a target="_blank" href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009403006000000">경남시티투어</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="fmain_menu">
+                <li><a href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406008000000">경남가이드</a>
+                    <ul class="fsub_menu_wrap">
+                        <li><a target="_blank" href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406008000000">관광안내책자</a></li>
+                        <li><a target="_blank" href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406001000000">경남소개</a></li>
+                        <li><a target="_blank" href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406009000000">여행도우미</a></li>
+                        <li><a target="_blank" href="https://tour.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009406009000000">경남관광슬로건</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="fmain_menu">
+                <li><a href="https://tour.gyeongnam.go.kr/board/list.gyeong?boardId=BBS_0002002&menuCd=DOM_000009407001000000&contentsSid=10237&cpath=">커뮤니티</a>
+                    <ul class="fsub_menu_wrap">
+                        <li><a target="_blank" href="https://tour.gyeongnam.go.kr/board/list.gyeong?boardId=BBS_0002002&menuCd=DOM_000009407001000000&contentsSid=10237&cpath=">공지사항</a></li>
+                        <li><a target="_blank" href="https://tour.gyeongnam.go.kr/board/write.gyeong?boardId=BBS_0002003&menuCd=DOM_000009407007000000&cpath=">홍보물신청</a></li>
+                        <li><a target="_blank" href="https://tour.gyeongnam.go.kr/board/list.gyeong?boardId=BBS_0000861&menuCd=DOM_000009407008000000&contentsSid=9035&cpath=">여행사 신청</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="f_img">
+            <img src="./img/DOGO_logo2.png" alt="logo">
+        </div>
+        
+    </div>
+    <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
