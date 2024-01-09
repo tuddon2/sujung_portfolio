@@ -1,0 +1,327 @@
+@media all and (min-width:1400px){
+
+
+/* 헤더영역(100%크기) */
+.main_header {
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    box-sizing: border-box;
+    /* background-color: aquamarine; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.logo {
+    width: 100px;
+    height: 100%;
+    font-family: 'STIX Two Text', serif;
+    font-weight: 500;
+    float: left;
+    font-size: 25px;
+    margin: 20px;
+}
+.main_menu {
+    width: 450px;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+}
+.main_menu a {
+    display: block;
+    font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+    /* color: #fff; */
+}
+.main_header a{
+    color: #fff;
+}
+.ham_but{
+    display: none;
+}
+
+
+/* -------------------- 메뉴끝 */
+
+
+.mask_wrap{
+    /* background-color: aqua; */
+    /* position: fixed; */
+    position: relative
+}
+
+.page_wrap{
+    position: relative;
+    /* border: 1px solid black;
+    box-sizing: border-box; */
+}
+.title_page{
+    background-color: #000000;
+}
+.left_title{
+    width: 28.64vw;
+    height: 15.62vw;
+    position: fixed;
+    top: 350px;
+    left: 4%;
+    /* font-family: "Bodoni Moda", serif; */
+    font-family:  serif;
+    font-size: 70px;
+    /* background-color: aqua; */
+    color:  #fff;
+    line-height: 90px;
+}
+.left_title span{
+    font-size: 120px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+.bottom_box{
+    width: 95%;
+    height: 300px;
+    border-top: 1px solid #fff;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 50px;
+    left: 2.5%;
+}
+.r_box{
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+    line-height: 40px;
+    border: 0.5px solid #fff;
+    box-sizing: border-box;
+    border-radius: 30px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.r_box a{
+    color: #fff;
+}
+.gif_box{
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    right: 200px;
+    bottom: 200px;
+}
+/* ----------------------------------타이틀끝 */
+
+.left_con{
+    width: 58vw;
+    height: 41.6vw;
+    /* box-sizing: border-box;
+    border-top: 1px solid #333; */
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    margin-top: -250px;
+    display: none;
+    
+}
+
+
+.con_box{
+    width: 60%;
+    height: 30.6vw;
+    float: left;
+    /* background-color: aquamarine; */
+}
+.img_box1{
+    width: 20.22vw;
+    height: 20.22vw;
+    margin-top: 10%;
+    float: right;
+}
+h4{
+    /* font-family: "Bodoni Moda", serif; */
+    font-family: 'STIX Two Text', serif;
+    font-size: 40px;
+    font-weight: 300;
+}
+.left_con h4{
+    margin: 50px 0px;
+}
+p{
+    font-size: 15px;
+    line-height: 25px;
+}
+
+
+.but_box{
+    width: 300px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #333;
+    line-height: 50px;
+    text-align: center;
+    font-size: 15px;
+    margin: 50px 20px;
+    display: block;
+}
+
+.left_con_2{
+    width: 58vw;
+    height: 20.6vw;
+    position: absolute;
+    bottom:100px;
+    right: 2.5%;
+    box-sizing: border-box;
+    border-top: 1px solid #333;
+    /* background-color: aquamarine; */
+  
+}
+.left_con_3{
+    bottom: 500px;
+    border-top: 0px;
+}
+
+.con_box_2{
+    width: 30vw;
+    height: 50%;
+    float: left;
+
+} 
+.left_con_2 .img_box{
+    width: 350px;
+    height: 350px;
+    margin-top: 20px;
+    float: right;
+}
+
+.left_con_2 h4{
+    margin: 50px 0;
+}
+.left_con_2 p{
+    margin: 20px 0;
+}
+.left_con_4{
+    height: 500px;
+    margin-top: -350px;
+}
+
+
+
+.on{
+    display: none;
+}
+
+
+
+
+
+/* -------------------푸터 */
+.footer_wrap{
+    position: relative;
+}
+footer{
+    width: 95%;
+    height: 300px;
+    position: absolute;
+    left: 2.5%;
+    bottom: 50px;
+
+    /* background-color: rgb(72, 155, 155); */
+}
+
+.f_title_box{
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    line-height: 150px;
+    font-size: 70px;
+    margin-top: 50px;
+}
+.f_title_box a{
+    font-weight: 400;
+}
+.f_title_box span{
+    /* font-family: "Bodoni Moda", serif; */
+    font-family: 'STIX Two Text', serif;
+    font-weight: 300;
+    font-style: italic;
+}
+.f_title_box img{
+    width: 70px;
+    height: 70px;
+    animation-name: move_arrow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes move_arrow{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateY(-10px) translateX(5px);
+    }
+}
+
+
+
+.f_box{
+    width: 300px;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+    /* background-color: rgb(50, 158, 158); */
+}
+.f_box2{
+    height: 50px;
+    left: 300px;
+}
+.f_box3{
+    height: 50px;
+    left: 500px;
+}
+.f_box4{
+    width: 400px;
+    right: 0;
+    text-align: right;
+}
+.f_box4 a{
+    display: block;
+    float: right;
+    height: 30px;
+    width: 180px;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: 'STIX Two Text', serif;
+
+}
+
+.icon img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* 지우지마쇼 */
+}

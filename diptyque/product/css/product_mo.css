@@ -1,0 +1,498 @@
+@media all and (max-width:799px){
+
+/* 헤더영역(100%크기) */
+.ham_but{
+    width: 30px;
+    height: 20px;
+    float: right;
+    margin: 20px;
+}
+.main_header {
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.logo {
+    width: 100px;
+    height: 100%;
+    /* font-family: "Nanum Myeongjo", serif; */
+    font-family: 'STIX Two Text', serif;
+    font-weight: 500;
+    float: left;
+    font-size: 25px;
+    margin: 20px;
+}
+.main_menu {
+    width: 200px;
+    /* height: 300px; */
+    display: none;
+    background-color: white;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    z-index: 2;
+}
+.main_menu a {
+    display: block;
+    font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+    /* color: white; */
+}
+
+/* 페이지1(타이틀) */
+.page_1{
+    background-color: black;
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; */
+}
+.top_text{
+    width: 100px;
+    height: 80px;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -80px;
+    margin-left: -150px;
+    color: white;
+    font-style: italic;
+    display: none;
+    transition: 0.5s;
+}
+.logo_box{
+    width: 320px;
+    height: 100px;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -150px;
+    color: white;
+    font-family: 'STIX Two Text', serif;
+    transition: 0.5s;
+}
+.logo_box span{
+    font-family: "Noto Sans KR", sans-serif;
+    display: none;
+}
+.bottom_text{
+    width: 100px;
+    height: 80px;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 20px;
+    margin-left: 50px;
+    color: white;
+    font-family: 'STIX Two Text', serif;
+    font-style: italic;
+    display: none;
+    transition: 0.5s;
+}
+
+/* 두번째 페이지(베스트제품) */
+.page_2{
+    position: relative;
+}
+.con_title{
+    width: 500px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -250px;
+    font-size: 80px;
+    font-family: 'STIX Two Text', serif;
+    font-style: italic;
+    text-align: center;
+    line-height: 80px;
+}
+.con_box{
+    width: 800px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -180px;
+    margin-left: -400px;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.5s;
+}
+.con_box img{
+    object-fit: cover;
+}
+.con_box img:nth-child(2){
+    margin: 0 40px;
+}
+.con_txt{
+    font-family: 'STIX Two Text', serif;
+    font-weight: 600;
+}
+.con_txt span{
+    font-family: "Noto Sans KR", sans-serif;
+    color: #5e5e5e;
+    font-weight: 400;
+}
+
+/* 세번째 페이지(캔들) */
+.page_3,.page_5{
+    position: relative;
+    overflow: hidden;
+}
+.left_txt{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    rotate: -90deg;
+    font-family: 'STIX Two Text', serif;
+    font-style: italic;
+}
+
+/* 무브박스 버튼 활성화 영역 */
+.but_box{
+    width: 300px;
+    height: 430px;
+    position: absolute;
+    top: 50%;
+    margin-top: -180px;
+    z-index: 4;
+}
+.left_side:hover{
+    cursor: url(../img/cl_icon.png), auto;
+}
+.right_side:hover{
+    cursor: url(../img/r_but_icon.png), auto;
+}
+.left_side{
+    left: 3%;
+}
+.right_side{
+    right: 3%;
+}
+/* 상품 무브박스 */
+.move_wrap{
+    width: 280px;
+    height: 430px;
+    margin: 0 auto;
+    position: relative;
+}
+.move_box{
+    width: calc(280px * 8);
+    height: 430px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transition: 0.5s;
+}
+.line_box{
+    width: 80%;
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    left: 10%;
+    bottom: 60px;
+}
+.in_line{
+    width: 0;
+    max-width: 1400px;
+    height: 1px;
+    background-color: #333;
+}
+.img_box{
+    width: 280px;
+    height: 100%;
+    float: left;
+}
+.con_img{
+    width: 280px;
+    height: 373px;
+    position: relative;
+}
+.img_box img{
+    width: 280px;
+    height: 373px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.back_img{
+    display: none;
+}
+
+.img_box p{
+    width: 280px;
+    height: 373px;
+}
+
+/* 4페이지 */
+.page_4{
+    position: relative;
+    overflow: hidden;
+}
+.in_move_box{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.in_page{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.in_page:first-child{
+    display: block;
+}
+.align_box{
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* 왼쪽 박스 */
+.left_box img{
+    object-fit: cover;
+}
+
+.prod_mask{
+    width: 470px;
+    height: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -330px;
+    margin-left: -235px;
+    border-radius: 200px;
+    z-index: 3;
+    overflow: hidden;
+ }
+.prod_mask img{
+    object-fit: cover;
+}
+
+/* 오른쪽 박스 */
+        
+.prod_txt{
+    width: 330px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -165px;
+    transition: 0.5s;
+    /* background-color: white; */
+}
+.cate{
+    width: 100%;
+    height: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #5e5e5e;
+}
+.prod_name{
+    width: 100%;
+    height: 50px;
+    line-height: 40px;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.prod_con{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+
+}
+.price{
+    width: 100%;
+    height: 40px;
+    /* font-size: 25px; */
+    margin-bottom: 30px;
+
+}
+.buy_but{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.add_but{
+    width: 30%;
+    height: 40px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    font-size: 14px;
+
+}
+.ani_cont{
+    width: 100px;
+    height: 30px;
+    margin: 0 auto;
+    display: none;
+}
+.ani_cont span{
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+.ani_cont span:nth-child(1){
+    margin-right: 10px;
+}
+
+
+/* 사이드 페이지넘버 */
+.side_con{
+    width: 40px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -40px;
+    transition: 0.5s;
+}
+.side_con h3{
+    font-size: 14px;
+    transition: 0.5s;
+}
+.cur_num{
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    transition: 0.5s;
+}
+.all_num{
+    width: 100%;
+    height: 40px;
+    color: #7c7c7c;
+    border-top: 1px solid #7c7c7c;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 40px;
+    transition: 0.5s;
+}
+/* 5페이지 */
+.page_5 .move_box .back_img{
+    filter: brightness(70%);
+}
+
+/* 푸터영역 */
+.foot_con{
+    overflow: hidden;
+}
+/* 첫번째줄 */
+.foot_con:nth-child(1){
+    padding: 60px;
+    box-sizing: border-box;
+}
+.foot_con:nth-child(1) a{
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: 'STIX Two Text', serif;
+    font-weight: 700;
+    font-size: 26px;
+    text-align: center;
+}
+.serv_img{
+    width: 900px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.foot_serv{
+    width: 150px;
+    height: 200px;
+    float: left;
+}
+.foot_serv p{
+    font-size: 14px;
+    text-align: center;
+}
+/* 두번째줄 */
+.foot_con:nth-child(2) .in_con{
+    width: 50%;
+    height: 100%;
+    float: left;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.foot_con:nth-child(2) .in_con:last-child{
+    background-color: #e7e7e7;
+}
+.in_con_title{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.in_con_txt{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.in_con input{
+    width: 100%;
+    height: 30px;
+    transition: 0.5s;
+}
+.foot_but{
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px auto;
+    color: #ffffff;
+    background-color: #181717;
+    cursor: pointer;
+}
+.foot_con p{
+    font-size: 14px;
+}
+
+/* 마지막줄 */
+.foot_bot_con{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.con_out_box{
+    display: flex;
+    justify-content: left;
+}
+.con_out_box a{
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+    margin-right: 20px;
+    color: #7c7c7c;
+}
+
+}
