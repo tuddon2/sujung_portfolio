@@ -1,0 +1,557 @@
+@media all and (max-width:1399px) and (min-width:800px){
+
+    
+/* 헤더영역(100%크기) */
+.main_header {
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    
+}
+.logo {
+    width: 100px;
+    height: 100%;
+    /* font-family: "Nanum Myeongjo", serif; */
+    font-family: 'STIX Two Text', serif;
+    font-weight: 500;
+    float: left;
+    font-size: 25px;
+    margin: 20px;
+    
+}
+.ham_but{
+    display: block;
+    width: 30px;
+    height: 20px;
+    float: right;
+    margin: 20px;
+    filter: invert(100%);
+    
+}
+.main_menu {
+    width: 200px;
+    /* height: 300px; */
+    display: none;
+    background-color: #0b0b0b;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    z-index: 2;
+}
+.main_menu a {
+    display: block;
+    width: 100%;
+    height: 100px;
+    font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+    /* color: white; */
+}
+.main_header a{
+    color: #fff;
+}
+/* -------------------- 메뉴끝 */
+
+
+
+
+.mask_wrap{
+    position: fixed;
+}
+.page_wrap{
+    position: relative;
+    /* border: 1px solid black;
+    box-sizing: border-box; */
+}
+.page_1,.page_2{
+    background-color: #0b0b0b;
+}
+
+
+/* -------------------1페이지 */
+.con_box{
+    width: 73vw;
+    height: 42vw;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    bottom:120px;
+    margin-left: -36.5vw;
+    /* background-color: rgb(43, 15, 165); */
+    color: #fff;
+}
+
+.gif_box{
+    width: 55vw;
+    height: 55vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -24vw;
+    margin-top: -22.5vw;
+}
+
+.about_title{
+    width: 100%;
+    height: 15vw;
+    position: absolute;
+    top: 11vw;
+    font-size: 80px;
+    /* padding-left: 200px; */
+    box-sizing: border-box;
+    font-weight: 400;
+    /* background-color: aqua; */
+    text-align: left;
+
+}
+.about_title span{
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+.left_con{
+    width: 50%;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    bottom: 75px;
+    /* background-color: aqua; */
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.left_con h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+.left_con p{
+    margin-top: 20px;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.con_box1{
+    height: 0;
+    overflow: hidden;
+}
+
+/* -------------------2페이지 */
+.title_box{
+    width: 73vw;
+    height: 42vw;
+    /* background-color: aqua; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -21vw;
+    margin-left: -36.5vw;
+    color: #333;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    display: none;
+}
+.page_2 .title_box{
+    color: #fff;
+    margin-top: -250px;
+
+}
+.title_box p{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    margin-top: -60px;
+    /* background-color: blueviolet; */
+}
+
+
+/* -------------------3페이지 */
+
+.team_title{
+    width: 95%;
+    height: 15vw;
+    margin: 0 auto;
+    margin-top: 80px;
+    /* background-color: aqua; */
+    font-size: 130px;
+    font-weight: 400;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* line-height: 130px; */
+
+}
+.team_title span{
+    font-size: px;
+    /* font-family: "Bodoni Moda", serif; */
+    font-family: 'STIX Two Text', serif;
+    font-style: italic;
+    font-weight: 100;
+    margin-top: 50px;
+}
+.t_left_box{
+    width: 32vw;
+    height: 32vw;
+    position: absolute;
+    left:3%;
+    top:50%;
+    margin-top: -10vw;
+    /* display: none; */
+}
+.t_right_box{
+    width: 52vw;
+    height: 32vw;
+    position: absolute;
+    right: 3%;
+    top:190px;
+
+}
+.t_img{
+    width: 100%;
+    height: 550px;
+    margin-bottom: 20px;
+    display: none;
+}
+.t_right_box p{
+    width: 100%;
+    height: 80px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    
+
+}
+
+
+
+
+/* -------------------4페이지 */
+.paper_title{
+    width: 100%;
+    height: 190px;
+    font-size: 90px;
+    font-weight: 400;
+    position: absolute;
+    top: 0;
+    line-height:140px;
+
+}
+.paper_title span{
+    /* font-family: "Bodoni Moda", serif; */
+    font-family: 'STIX Two Text', serif;
+    font-weight: 500;
+}
+.page_4 h2,.page_4 p{
+    background-color: #fff;
+}
+.page_5 .con_box{
+    height: 80%;
+    top: 80px
+}
+.page_6 h2,.page_6 p{
+    background-color: #fff;
+}
+.page_6 h2{
+    font-size: 70px;
+}
+
+/* -------------------7페이지 */
+.page_7 .con_box{
+    width: 90vw;
+    height: 55vw;
+    /* background-color: aqua; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25vw;
+    margin-left: -45vw;
+    /* background-color: blue; */
+}
+.product_img{
+    width: 32vw;
+    height: 24vw;
+    position: absolute;
+    display: none;
+    overflow: hidden;
+}
+.p_img_1,.p_img_2{
+    top: 0;
+}
+.p_img_3,.p_img_4{
+    bottom: 0;
+}
+.p_img_1,.p_img_3{
+    left: 0;
+}
+.p_img_2,.p_img_4{
+    right: 0;
+}
+.p_img_1 img{
+    width: 105%;
+    height: 105%;
+}
+.p_img_2 img{
+    width: 95%;
+    height: 95%;
+    margin-bottom: 100px;
+}
+.product_img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit:contain;
+    transition-duration: 0.5s;
+}
+.product_img .p_front_img{
+    z-index: 9;
+}
+.product_img:hover .p_front_img{
+    opacity: 0;
+}
+
+.product_title{
+    width: 36vw;
+    height: 16vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -18vw;
+    margin-top: -6vw;
+    color: #333;
+    /* background-color: darkgoldenrod; */
+    font-size:45px;
+    text-align: center;
+    display: none;
+    line-height: 40px;
+    font-weight: 700;
+    z-index: 99;
+}
+.product_title span:first-child{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+}
+.p_sub_title{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+/* -------------------8페이지 */
+.page_8{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.new_left_box{
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    left: 2.5%;
+    top: 0px;
+    /* background-color: aqua; */
+}
+.new_left_box span{
+    /* font-family: "Bodoni Moda", serif; */
+    font-family: 'STIX Two Text', serif;
+    font-weight: 300;
+    font-style: italic;
+
+}
+.new_left_box a{
+    font-size: 80px;
+}
+
+.new_left_box img{
+    width: 50px;
+    height: 50px;
+    
+}
+.new_title{
+    width: 100%;
+    height: 140px;
+    font-size: 100px;
+    font-weight: 500;
+}
+.new_right_box{
+    width: 80vw;
+    height: 30vw;
+    position: absolute;
+    right: 5%;
+    bottom: 380px;
+
+}
+.new_con{
+    width: 49%;
+    height: 100%;
+    float: left;
+    /* background-color: darkgoldenrod; */
+    font-size: 12px;
+    position: relative;
+}
+.new_con_left{
+    margin-right: 2%;
+}
+.new_con h5{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.new_con p{
+    margin-bottom: 15%;
+}
+.youtube_box{
+    width: 100%;
+    height: 68%;
+    /* background-color: darkviolet; */
+    margin-top: 15px;
+    border-radius: 50px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    transition-duration: 1s;
+}
+.youtube_box:hover iframe{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+.bottom_box{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 500px;
+    /* background-color: rgb(28, 131, 131); */
+    font-size: 30px;
+    overflow: hidden;
+}
+
+.text_movebox{
+    width: 4800px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.arrow_img{
+    animation-name: move_arrow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes move_arrow{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateY(-10px) translateX(5px);
+    }
+}
+
+
+/* -------------------푸터 */
+.footer_wrap{
+    position: relative;
+}
+footer{
+    width: 95%;
+    height: 300px;
+    position: absolute;
+    left: 2.5%;
+    bottom: 50px;
+
+    /* background-color: rgb(72, 155, 155); */
+}
+
+.f_title_box{
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    line-height: 150px;
+    font-size: 70px;
+    margin-top: 50px;
+}
+.f_title_box a{
+    font-weight: 400;
+}
+.f_title_box span{
+    /* font-family: "Bodoni Moda", serif; */
+    font-family:  serif;
+    font-weight: 300;
+    font-style: italic;
+}
+.f_title_box img{
+    width: 70px;
+    height: 70px;
+    animation-name: move_arrow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes move_arrow{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateY(-10px) translateX(5px);
+    }
+}
+
+
+.f_box{
+    width: 27vw;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+    
+}
+.f_box2{
+    width: 15vw;
+    height: 50px;
+    left:28vw;
+    /* background-color: rgb(11, 17, 97); */
+}
+.f_box3{
+    width: 18vw;
+    height: 50px;
+    left: 45vw;
+    /* background-color: rgb(223, 136, 6); */
+}
+.f_box4{
+    width:25w;
+    right: 0;
+    text-align: right;
+}
+.f_box4 a{
+    display: block;
+    float: right;
+    height: 30px;
+    width: 180px;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: 'STIX Two Text', serif;
+
+}
+
+.icon img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* 지우지마/ */
+}
